@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(39, 13, 13);
+            padding-left: 13%;
+            padding-right: 13%;
+        }
+        input {
+            background-color: rgb(128, 37, 37);
+        }
+        textarea {
+            background-color: rgb(141, 101, 101);
+        }
+        div {
+            background-color: rgb(128, 37, 37);
+            color: rgb(228, 189, 195);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome To Homepage</h1>
+    </div>
+    <br>
+    <form action="{% url 'count' %}"><!-- //url of count --> 
+            
+        <textarea name="wordcount" cols="60" rows="10"></textarea>
+        <br>
+        <input type="submit" value="count"></input>
+    </form>
+</body>
+</html>
